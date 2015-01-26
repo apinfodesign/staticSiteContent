@@ -1,2 +1,2 @@
 # mini-portfolio
-# staticSiteContent
+# the site generator repo
