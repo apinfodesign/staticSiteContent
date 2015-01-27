@@ -1,79 +1,69 @@
 var express = require('express');
 var router = express.Router();
-//var bootstrap = require('bootstrap') 
 
+//set location of your jade content files
+var contentFilepath = '/../../ContentMarkdownFiles/posts/'; 
 
-//var posts = require('..posts');   //imported from my first blog
+ 
 var fs = require('fs');				 //imported from my first blog
 var jade = require('jade');				 //imported from my first blog
-
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Full Screen', collectorArray: fileCollector });
-
 });
 
+/* GET contact page */
 router.get('/pagecontent', function(req, res, next){
    res.render('ourprojects', { title: 'Full Screen' }); 
 });
 
-// router.get('/bootstraptest', function(req, res, next){
-//    res.render('../public/indexbootstrap', { title: 'Full Screen' }); 
-// }); 
+router.get('/bootstraptest', function(req, res, next){
+   res.render('../public/indexbootstrap', { title: 'Full Screen' }); 
+}); 
 
-//////added from 11a ////////////
-
+// regex find all .jade content files in posts directory 
 var find = function(post_name, cb) {
     fs.readdir('./posts/', function(err, files) {
-
-    	console.log(files);
-
+    	//console.log(files);
         if (files.indexOf(post_name + '.jade') !== -1) {
-            fs.readFile(__dirname + '/../posts/' + post_name + '.jade', function(err, data) {
+            fs.readFile(__dirname + contentFilepath + post_name + '.jade', function(err, data) {
                 cb(jade.compile(data)() );
             })
-        } else {
-            cb(null);
+        } 
+        else
+        {
+        cb(null);
         }
     })
-}
+};
 
+// intentionally outside of forEach scope
 var blogPostFiles = fs.readdirSync(__dirname + '/../posts' ); 
-var collector=[];
-var fileCollector=[];
-//console.log("blogpostfiles " + blogPostFiles);
+var collector=[];      //collects file names
+var fileCollector=[];  //collects file contents
 
 ////////////////////////////////
 blogPostFiles.forEach(function cleanFiles (value, index, array){
-	var infile;
-	var pattern = new RegExp(".jade");
-
+	var infile;  //takes fs incoming file
+	var pattern = new RegExp(".jade");   //match file .jade
 	if ( pattern.test(value)  )  // file IS dot jade
 		{
-		
-		inFile= fs.readFileSync( __dirname + '/../posts/'+ blogPostFiles[index]  );
-		
+		inFile= fs.readFileSync( __dirname + contentFilepath + blogPostFiles[index]  );
 		inFile = jade.render(inFile);   //make jade into html
-
-		fileCollector.push(inFile);
-		
-		collector.push(value);
-		console.log("Is a dot jade file.");}
-
-	else
-		{ 
-		  console.log("DID NOT FIND dot jade FILE."); 
+		fileCollector.push(inFile);    //keep file content		
+		collector.push(value);         //keep file name, not really needed?
+		//console.log("Is a dot jade file.");
 		}
-//console.log(collector);
-
-	
+	else
+		{ //console.log("DID NOT FIND dot jade FILE."); 
+		}
 return fileCollector;
 });
-
 //console.log(" collector is " + collector);
 //console.log(collector.length + " is length");
-console.log("fileCollector is " + fileCollector);
-console.log(fileCollector.length + " is fileCollector length");
+//console.log("fileCollector is " + fileCollector);
+//console.log(fileCollector.length + " is fileCollector length");
+
 
 module.exports = router;
