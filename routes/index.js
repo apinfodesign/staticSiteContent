@@ -8,7 +8,7 @@ var jade = require('jade');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Full Screen', collectorArray: gatherPostFiles() });
+  res.render('index', { title: 'Full Screen', collectorArray: gatherPostFiles(contentFilepath) });
 });
 
 /* GET contact page */
@@ -16,8 +16,10 @@ router.get('/pagecontent', function(req, res, next){
    res.render('ourprojects', { title: 'Full Screen' }); 
 });
 
-var gatherPostFiles = function(){   
- 	var blogPostFiles = fs.readdirSync(__dirname + '/../posts' ); 
+///give contentFilepath as argument when calling gatherPostFiles
+var gatherPostFiles = function(arg){ 
+	var contentFilepath = arg;
+ 	var blogPostFiles = fs.readdirSync(__dirname + contentFilepath ); 
 	var collector=[];      //collects file names
 	var fileCollector=[];  //collects file contents
 	// regex find all .jade content files in posts directory 
@@ -44,4 +46,8 @@ var gatherPostFiles = function(){
 return fileCollector;
 };  //close gatherPostFiles
 
+
 module.exports = router;
+module.exports.gatherPostFiles = gatherPostFiles;
+
+
