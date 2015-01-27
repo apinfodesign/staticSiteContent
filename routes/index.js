@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-//set location of your jade content files
+//Set the location of your jade content files!!!
 var contentFilepath = '/../../ContentMarkdownFiles/posts/'; 
 
  
