@@ -3,10 +3,9 @@ var router = express.Router();
 
 //Set the location of your jade content files!!!
 var contentFilepath = '/../../ContentMarkdownFiles/posts/'; 
-
  
-var fs = require('fs');				 //imported from my first blog
-var jade = require('jade');				 //imported from my first blog
+var fs = require('fs');				 
+var jade = require('jade');		 
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -23,20 +22,20 @@ router.get('/bootstraptest', function(req, res, next){
 }); 
 
 // regex find all .jade content files in posts directory 
-var find = function(post_name, cb) {
-    fs.readdir('./posts/', function(err, files) {
-    	//console.log(files);
-        if (files.indexOf(post_name + '.jade') !== -1) {
-            fs.readFile(__dirname + contentFilepath + post_name + '.jade', function(err, data) {
-                cb(jade.compile(data)() );
-            })
-        } 
-        else
-        {
-        cb(null);
-        }
-    })
-};
+// var find = function(post_name, cb) {
+//     fs.readdir('./posts/', function(err, files) {
+//     	//console.log(files);
+//         if (files.indexOf(post_name + '.jade') !== -1) {
+//             fs.readFile(__dirname + contentFilepath + post_name + '.jade', function(err, data) {
+//                 cb(jade.compile(data)() );
+//             })
+//         } 
+//         else
+//         {
+//         cb(null);
+//         }
+//     })
+// };
 
 // intentionally outside of forEach scope
 var blogPostFiles = fs.readdirSync(__dirname + '/../posts' ); 
