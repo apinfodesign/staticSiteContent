@@ -1,24 +1,22 @@
 //Set the location of your jade content files!!!
 var contentFilepath = '/../../ContentMarkdownFiles/posts/'; 
-
 var express = require('express');
 var router = express.Router();
 var fs = require('fs');				 
 var jade = require('jade');
-
 var fileimport = require('fileimport'); //my import of this
 
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Full Screen', 
-  	       collectorArray:  fileimport.gatherPostFiles(contentFilepath) });
+  	       collectorArray: fileimport.fileimport.gatherPostFiles(contentFilepath) });
 });
 
-/* GET contact page */
-router.get('/pagecontent', function(req, res, next){
-   res.render('ourprojects', { title: 'Full Screen' }); 
-});
+// /* GET contact page */
+// router.get('/pagecontent', function(req, res, next){
+//    res.render('ourprojects', { title: 'Full Screen' }); 
+// });
 
 ///give contentFilepath as argument when calling gatherPostFiles
 // var gatherPostFiles = function(arg){ 
