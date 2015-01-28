@@ -15,17 +15,16 @@
     "jade": "~1.9.1",
     "morgan": "~1.5.1",
     "serve-favicon": "~2.2.0",
-    "fileimport": 
-    "https://github.com/apinfodesign/PutJadeFilesInAnArray.git" 
+    "fileimport": "git://github.com/apinfodesign/PutJadeFilesInAnArray.git" 
   },
 
 "engines": {
     "node": "0.10.x"
   },
 "repository": {
-    "type": "git",
-    "url": "https://github.com/heroku/node-js-getting-started"
+ 
   },
+
 "keywords": [
     "node",
     "heroku",
