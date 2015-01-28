@@ -10,10 +10,17 @@ a {
 
 .mycontent
  { 
- 	font: 12px; background-color: #E0E0FF;
+ 	font: 12px ; 
+ 	color: black;
+ 	background-color: #E0E0FF;
  	padding: 20px;
  	margin: 20px;
  		}
 
-
+.inserts {
+	background-color: #666666;
+	margin: 20px;
+	padding: 10px;
+	color: white;
+}
  
