@@ -1,6 +1,8 @@
 {
   "name": "p15-mini-portfolio",
   "version": "0.0.0",
+  "descrioption": "a mini portfolio project",
+  "main": "index.js",
   "private": true,
   "scripts": {
     "start": "node ./bin/www"
@@ -14,4 +16,19 @@
     "morgan": "~1.5.1",
     "serve-favicon": "~2.2.0",
     "fileimport": "git+ssh://git@github.com:apinfodesign/PutJadeFilesInAnArray.git" 
-  }
+  },
+
+"engines": {
+    "node": "0.10.x"
+  },
+"repository": {
+    "type": "git",
+    "url": "https://github.com/heroku/node-js-getting-started"
+  },
+"keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
+}
