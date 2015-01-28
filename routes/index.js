@@ -12,14 +12,14 @@ var fileimport = require('fileimport'); //my import of this
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Full Screen', 
+  res.render('index', { title: 'Parliament of Owls', 
      collectorArray: fileimport.fileimport(contentFilepath)
   	   });
 });
 
 /* GET contact page */
 router.get('/pagecontent', function(req, res, next){
-   res.render('ourprojects', { title: 'Full Screen' }); 
+   res.render('ourprojects', { title: 'Parliament of Owls'}); 
 });
 
 module.exports = router;

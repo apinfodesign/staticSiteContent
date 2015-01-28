@@ -1,9 +1,10 @@
 extends layout
 
 block content
-  h1= title
-  h2 Contact Us at #{title}
-  <a href="/">Home</a>  <a href="/pagecontent">Contact</a> 
+  
+  include header.jade
+  include menu.jade
+  
   p
   p  Telephone: 555 555-5555
   p  E-mail: a@b.net

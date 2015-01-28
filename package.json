@@ -1,7 +1,7 @@
 {
   "name": "p15-mini-portfolio",
   "version": "0.0.0",
-  "descrioption": "a mini portfolio project",
+  "description": "a mini portfolio project",
   "main": "index.js",
   "private": true,
   "scripts": {
