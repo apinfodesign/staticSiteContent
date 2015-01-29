@@ -1,24 +1,34 @@
 body {
-  margin-left: -1px;
-  margin-right: -1px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
   padding: 0px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-color: #A3ECDA;
-	}
+}
 
 a {
   color: blue;
 }
 
-.mycontent
- { 
- 	font: 12px ; 
+h1 {
+  font-size: 5.5vw;
+}
+h2 {
+  font-size: 3.5vh;
+}	
+p {
+  font-size: .75em;
+}
+
+.mycontent{ 
+ 	font-size: 3vmin;
  	color: black;
  	background-color: #E0E0FF;
  	padding: 10px;
- 	margin-left: -1px;
- 	margin-right: -1px;
- 		}
+ 	margin-left: -0px;
+ 	margin-right: -0px;
+ }
 
 .inserts {
 	background-color: #666666;
@@ -27,41 +37,50 @@ a {
 	color: white;
 }
 
-#logo {height: 200px; width: 200px;}
+#logo {
+	height: 200px; 
+	width: 200px;
+}
 
-#header{background-color: #FFDB4D; 
-		//height: 200px;
-		}
+#header{
+	background-image: url("/images/cuteowl1024.jpg");
+  	background-size: cover;
+}
 
-#first 
-	{ font-size: 25px;
+#first{ 
+	color: white;
 	float: left;
 	display: inline-block;
-	 margin-top: 40px;
-	height: 200px;
+	margin-top: 40px;
+	height: 240px;
 	padding-left: 30px;
-	width: 50%;}
-#second 
-	{margin-top: 60px;
+	width: 80%;
+	text-align: center;
+}
+
+#second{
+	margin-top: 60px;
 	display: inline-block;
 	float:left;
-	height: 200px;
-	 width: 20%;}
-#third 
-   { 
-	height: 200px;
+	height: 240px;
+	width: 5%;
+}
+
+#third { 
+	height: 240px;
    	display: inline-block;
-    width: 17%;
- 	}
+    width: 5%;
+ }
  
 #menubox{
 	margin: auto;
 	clear: both; 
-	width:101%; 
+	text-align: center;
+	width:100%; 
 	height: 30px; 
 	padding: 5px; 
-	background-color: #ffffff;}
-
+	background-color: #ffffff;
+}
 
 
 
