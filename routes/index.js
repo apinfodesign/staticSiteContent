@@ -22,6 +22,11 @@ router.get('/pagecontent', function(req, res, next){
    res.render('ourprojects', { title: 'A Parliament of Owls'}); 
 });
 
+/* GET contact page */
+router.get('/activate', function(req, res, next){
+   res.render('activate', { title: 'A Parliament of Owls'}); 
+});
+
 module.exports = router;
  
 
