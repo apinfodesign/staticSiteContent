@@ -1,7 +1,8 @@
 body {
-  padding: 50px;
+  padding: 0px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-color: #A3ECDA;
+
 }
 
 a {
@@ -25,4 +26,29 @@ a {
 }
 
 #logo {height: 200px; width: 200px;}
+
+#header{background-color: #FFDB4D; 
+		height: 200px;}
+
+#first 
+	{ font-size: 25px;
+	float: left;
+	display: inline-block;
+	 margin-top: 40px;
+	height: 200px;
+	padding-left: 30px;
+	width: 50%;}
+#second 
+	{   margin-top: 60px;
+		display: inline-block;
+		float:left;
+		height: 200px;
+	 width: 20%;}
+#third 
+   { 
+			height: 200px;
+   	display: inline-block;
+    width: 17%;
+ 
+	}
  
