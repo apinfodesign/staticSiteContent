@@ -7,13 +7,13 @@ var express = require('express');
 var router = express.Router();
 var fs = require('fs');				 
 var jade = require('jade');
-var fileimport = require('fileimport'); //my import of this
+var fileimport = require('fileimport2'); //my import of this
 
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'A Parliament of Owls', 
-     collectorArray: fileimport.fileimport(contentFilepath)
+     collectorArray: fileimport2.fileimport2(contentFilepath)
   	   });
 });
 
@@ -28,9 +28,3 @@ router.get('/activate', function(req, res, next){
 });
 
 module.exports = router;
-
-
-
-
- 
-
