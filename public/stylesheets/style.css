@@ -82,8 +82,17 @@ p {
 	background-color: #ffffff;
 }
 
+.titleStyle{font-size: 20px;}
 
+.wrapper 
+{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
 
+}
+
+.item {width:90%; height: 250px; background-color: black; margin-bottom: 30px; }
 
 
 
