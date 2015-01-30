@@ -7,7 +7,7 @@ var express = require('express');
 var router = express.Router();
 var fs = require('fs');				 
 var jade = require('jade');
-var fileimport = require('fileimport2'); //my import of this
+var fileimport2 = require('fileimport2'); //my import of this
 
 
 /* GET home page. */
