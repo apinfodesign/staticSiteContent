@@ -1,4 +1,6 @@
 {
+"button": "2nd Best",
+
 "title": "Find All the Second Best Places in Portland",
 
 "text" : "Lots of apps will help you find the best of this or the best of that.  Only this app helps you find the second best of this or that.  Second Best - When you need good enough, fast.",
@@ -7,5 +9,9 @@
 
 "backgroundimage": " ",
 
-"moreinfolink": "http://google.com"
+"moreinfolink": "http://google.com",
+
+"date": "12/11/2013",
+
+"order": "4"
 }

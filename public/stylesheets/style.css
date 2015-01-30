@@ -73,13 +73,15 @@ p {
  }
  
 #menubox{
-	margin: auto;
+ 	margin: auto;
 	clear: both; 
 	text-align: center;
 	width:100%; 
 	height: 30px; 
 	padding: 5px; 
-	background-color: #ffffff;
+	background-color: black;
+	white-space:nowrap;
+	 
 }
 
 .titleStyle{font-size: 20px;}

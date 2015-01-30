@@ -1,7 +1,10 @@
 {
+"button": "P-39",
 "title": "Russian P-39",
 "text" : "During the Second World War the U.S. supplied many P-39s to Russia.",
 "image": "/images/p39russian.png",
 "backgroundimage": " ",
-"moreinfolink": "http://google.com "
+"moreinfolink": "http://google.com ",
+"date": "01/02/15",
+"order": "1"
 }

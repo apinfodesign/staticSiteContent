@@ -1,20 +1,21 @@
 extends layout
 block content
   include header.jade
-  include menu.jade
-  
   .inserts
-    h3 Our Recent Projects Are Presented Below  
+    div(id="menubox")
+      each val in collectorArray
+        !=val.button + " "
+    h3 Recent Projects  
     ul
       each val in collectorArray
         div.item
           div!=val.title
-          img(src=(val.image), width=600, height='150').wrapper
+          img(src=(val.image)).wrapper
           br
           a(href=val.moreinfolink) Learn More
           br
+    include menu.jade
  
-  | 
   | <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   | <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
   | <script > $('.carousel').carousel()  </script>
