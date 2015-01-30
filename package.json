@@ -1,13 +1,10 @@
 {
   "name": "p15-mini-portfolio",
   "version": "0.0.0",
-  "description": "a mini portfolio project",
-  "main": "index.js",
+  "engines": { "node": "0.10.x" },
   "private": true,
-  "scripts": {
-    "start": "node ./bin/www"
-  },
-"dependencies": {
+  "scripts": { "start": "node ./bin/www"},
+  "dependencies": {
     "body-parser": "~1.10.2",
     "cookie-parser": "~1.3.3",
     "debug": "~2.1.1",
@@ -15,10 +12,6 @@
     "jade": "~1.9.1",
     "morgan": "~1.5.1",
     "serve-favicon": "~2.2.0",
-    "fileimport2": "git://github.com/apinfodesign/PutJadeFilesInAnArray.git`" 
-  },
-
-"engines": {
-    "node": "0.10.x"
+    "fileimport2": "http://github.com/apinfodesign/PutJadeFilesInAnArray.git`" 
   }
 }
