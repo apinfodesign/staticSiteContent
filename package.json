@@ -13,7 +13,6 @@
     "morgan": "~1.5.1",
     "serve-favicon": "~2.2.0",
     "fileimport2": "git://github.com/apinfodesign/PutJadeFilesInAnArray.git",
-    "configure2": 
-      "git://github.com/apinfodesign/PutJadeFilesInAnArray.git/configure/siteConfigurationUser.json" 
+    "configure2": "git://github.com/apinfodesign/PutJadeFilesInAnArray/configure/siteConfigurationUser.json"
   }
 }
