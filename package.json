@@ -12,6 +12,6 @@
     "jade": "~1.9.1",
     "morgan": "~1.5.1",
     "serve-favicon": "~2.2.0",
-    "fileimport2": "git://github.com/apinfodesign/PutJadeFilesInAnArray.git",
+    "fileimport2": "git://github.com/apinfodesign/PutJadeFilesInAnArray.git"
     }
 }
