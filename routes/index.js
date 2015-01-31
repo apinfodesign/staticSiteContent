@@ -15,7 +15,7 @@ var configure2 = require('fileimport2');  //import configuration json
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'A Parliament of Owls', 
      collectorArray: fileimport2.fileimport2(contentFilepath), 
-
+     configurationFile: fileimport2.fileimport2/configure/siteConfigurationUser.json)
   	   });
 });
 
