@@ -8,7 +8,7 @@ var router = express.Router();
 var fs = require('fs');				 
 var jade = require('jade');
 var fileimport2 = require('fileimport2'); //my import of this
-var configure2 = require('configure2');  //import configuration json
+var configure2 = require('fileimport2/configure/siteConfigurationUser.json');  //import configuration json
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
