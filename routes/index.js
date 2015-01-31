@@ -14,7 +14,7 @@ var fileimport2 = require('fileimport2'); //my import of this
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'A Parliament of Owls', 
      collectorArray: fileimport2.fileimport2(contentFilepath), 
-     configurationFile: fileimport2.configure2)
+     configurationFile: fileimport2.configure2())
   	   });
 });
 
