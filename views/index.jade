@@ -3,12 +3,13 @@ block content
   include header.jade
   .inserts
     div(id="menubox")
+      a Home
       each val in collectorArray
         !=val.button + " "
     h3 Recent Projects  
-    ul
+    div(id="allContent")
       each val in collectorArray
-        div.item
+        div.item(class="showbox slideright")
           div!=val.title
           img(src=(val.image)).wrapper
           br

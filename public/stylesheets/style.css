@@ -35,6 +35,9 @@ p {
 	margin: 20px;
 	padding: 10px;
 	color: white;
+    flex-wrap: wrap;
+}
+
 }
 
 #logo {
@@ -91,10 +94,45 @@ p {
     width: 200px;
     height: 200px;
     overflow: hidden;
-
 }
 
-.item {width:90%; height: 250px; background-color: black; margin-bottom: 30px; }
+#allContent{ 
+	background-color: #333333;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: left;
+ }
 
+.item {width:300px; 
+		height: 300px; 
+		background-color: black; 
+		margin: 30px;
+		padding-top:20px;
+		text-align: center;
+  }
 
+.showbox {
+    float: left;
+    margin: 0.5em 0.5em;
+    width: 270px;
+    height: 270px;
+    border: 2px solid green;
+    background-color: #black;
+    //line-height: 60px;
+    text-align: center;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+  }
+  .showbox.slideright:hover {
+    -webkit-transform: transform: scale(1.2);
+    -moz-transform: transform: scale(1.2);
+    -o-transform: transform: scale(1.2);
+    -ms-transform: transform: scale(1.2);
+    transform: scale(1.2);
+  }
 
+ 
+<div class="showbox slideright">box 1</div>
