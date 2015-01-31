@@ -8,13 +8,14 @@ var router = express.Router();
 var fs = require('fs');				 
 var jade = require('jade');
 var fileimport2 = require('fileimport2'); //my import of this
-var configure2 = require('fileimport2/configure/siteConfigurationUser.json');  //import configuration json
+
+var configure2 = require('fileimport2');  //import configuration json
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'A Parliament of Owls', 
-     collectorArray: fileimport2.fileimport2(contentFilepath),
-     configure2: fileimport2.fileimport2.configure.siteConfigurationUser.json
+     collectorArray: fileimport2.fileimport2(contentFilepath), 
+
   	   });
 });
 
