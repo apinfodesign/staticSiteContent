@@ -7,16 +7,17 @@ var express = require('express');
 var router = express.Router();
 var fs = require('fs');				 
 var jade = require('jade');
-var fileimport2 = require('fileimport2'); //my import of this
+var fileimportAssignment = require('fileimport2'); 
+//assign package reference to github repo as fileimport2, as local var fileimport2
 
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'A Parliament of Owls', 
-     collectorArray: fileimport2.fileimport2(contentFilepath), 
-     configurationFile: fileimport2.configure2()
+     collectorArray: fileimportAssignment.fileimport2(contentFilepath), 
+     configurationFile: fileimportAssignment.configure2
   	   });
-});
+ });
 
 /* GET contact page */
 router.get('/pagecontent', function(req, res, next){
