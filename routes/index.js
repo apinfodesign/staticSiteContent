@@ -1,8 +1,11 @@
 //MAIN STATIC SITE GENERATOR
 //Set the location of your jade content files!!!
 var contentFilepath =  __dirname + "/../posts/";
-
 // path.join(__dirname, "..", 'posts') ; 
+
+var configureFilepath = __dirname + "/node_modules/fileimport2/configure/";
+
+
 var express = require('express');
 var router = express.Router();
 var fs = require('fs');				 
@@ -15,7 +18,7 @@ var fileimportAssignment = require('fileimport2');
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'A Parliament of Owls', 
      collectorArray: fileimportAssignment.fileimport2(contentFilepath), 
-     configurationFile: fileimportAssignment.configure2
+     configurationFile: fileimportAssignment.configure2(configureFilepath)
   	   });
  });
 
@@ -31,3 +34,4 @@ router.get('/activate', function(req, res, next){
 
 
 module.exports = router;
+
