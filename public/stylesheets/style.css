@@ -89,10 +89,11 @@ p {
 .titleStyle{font-size: 20px;}
 
 .wrapper {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     overflow: hidden;
-    border-radius: 20px;
+    border-radius: 10px;
+
 }
 
 #allContent{ 
@@ -127,13 +128,19 @@ p {
     transition: .5s ease-in-out;
   }
 
- .showbox.slideright:hover {
+.showbox.expander.clicker{
+    font-size: 12px; 	
+  }
+
+ .showbox.expander.clicker:hover {
     -webkit-transform: transform: scale(1.1);
     -moz-transform: transform: scale(1.1);
     -o-transform: transform: scale(1.1);
     -ms-transform: transform: scale(1.1);
     transform: scale(1.1);
   }
+
+
 
 .contactStyle{
 	font-size: 5vw;

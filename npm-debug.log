@@ -8,7 +8,7 @@
 7 verbose unsafe-perm in lifecycle true
 8 info p15-mini-portfolio@0.0.0 Failed to exec start script
 9 error p15-mini-portfolio@0.0.0 start: ` `node ./bin/www``
-9 error Exit status 8
+9 error Exit status 127
 10 error Failed at the p15-mini-portfolio@0.0.0 start script.
 10 error This is most likely a problem with the p15-mini-portfolio package,
 10 error not with npm itself.
@@ -17,7 +17,7 @@
 10 error You can get their info via:
 10 error     npm owner ls p15-mini-portfolio
 10 error There is likely additional logging output above.
-11 error System Darwin 14.0.0
+11 error System Darwin 14.1.0
 12 error command "node" "/usr/local/bin/npm" "start"
 13 error cwd /Users/mileshochstein/Documents/ProjectsPCS2015/p15-mini-portfolio/StaticSiteFun
 14 error node -v v0.10.32

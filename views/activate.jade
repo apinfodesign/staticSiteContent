@@ -1,8 +1,11 @@
 extends layout
 
 block content  
-  include header.jade
-  include menu.jade
+	include header.jade
+	include menu.jade
   
-  p
-  p.contactStyle  Activate Moonbeams Now
+
+	p.contactStyle  Activate Moonbeams Now
+	p.contactStyle
+		div!=configurationFile.staticPageList.aboutExample.staticPageName
+		div!=configurationFile.staticPageList.aboutExample.staticPageTextContent

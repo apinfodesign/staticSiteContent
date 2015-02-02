@@ -9,9 +9,10 @@ block content
     h3 Recent Projects
     div(id="allContent")
       each val in collectorArray
-        div.item(class="showbox slideright")
+        div.item(class="showbox expander clicker")
           div!=val.title
           img(src=(val.image)).wrapper
+          div!=val.text
           br
           a(href=val.moreinfolink) Learn More
           br
@@ -19,4 +20,5 @@ block content
  
   | <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   | <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-  | <script > $('.carousel').carousel()  </script>
+// <script> $('.clicker').click(function(){ $('.item').; });</script>
+  |  

@@ -4,7 +4,9 @@ block content
 	include header.jade
 	include menu.jade
  
-	p
+	div!=configurationFile.staticPageList.contactExample.staticPageName
+	div!=configurationFile.staticPageList.contactExample.staticPageTextContent
+	p  
 	p.contactStyle  Telephone: 555 555-5555
 	p.contactStyle  E-mail: a@b.net
 	p.contactStyle  Moonbeams:  You know how.
